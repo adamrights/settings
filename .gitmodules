@@ -3,4 +3,4 @@
 	url = https://github.com/adamrights/prezto.git
 [submodule ".spf13-vim-3"]
 	path = .spf13-vim-3
-	url = https://github.com/adamrights/spf13-vim-3.git
+	url = https://github.com/adamrights/spf13-vim.git
