@@ -1,3 +1,12 @@
+## Creating a new repository since most of Mathias' forks are osx and I'm primarily Arch Linux
+
+
+# adamrights' Arch GNU/Linux settings
+
+My dotfile settings + prezto for zsh, spf13 for vim, and other dotfiles culled from github
+
+### for posterity until these change enough:
+
 # Mathias’s dotfiles
 
 ## Installation
