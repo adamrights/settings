@@ -1,0 +1,62 @@
+yaourt zsh
+yaourt pip
+yaourt virtualenvs
+yaourt virtualenv
+yaourt chrome-canary
+yaourt canary
+yaourt chrome
+yaourt pip
+yaourt drive
+yaourt lenovo
+yaourt nautilus
+yaourt nautilus
+yaourt clonezilla
+yaourt clonezilla
+yaourt  gptfdisk mtools 
+yaourt gptfdisk mtools 
+yaourt -Sy gptfdisk mtools --aur --devel
+yaourt -Sy htfs --aur --devel
+yaourt -Sy htfsutils --aur --devel
+yaourt -Sy htfs+ --aur --devel
+yaourt htfs
+yaourt fs
+yaourt bfa
+yaourt firmware
+yaourt -Syu bfa
+yaourt -Ss bfa
+yaourt -Ss bfa-firmware
+yaourt -Ss firmware
+yaourt lenovo
+yaourt hwinfo
+yaourt bfa firmware
+yaourt bfa 
+yaourt hg
+yaourt spotify
+yaourt spotify
+yaourt spotify
+yaourt core
+yaourt xmond
+yaourt monad
+yaourt xmonad
+yaourt bfa_modules
+yaourt bfa_
+yaourt drivers
+yaourt drivers-bfa
+yaourt ideapad
+yaourt lenovo
+yaourt aircrack
+yaourt aircrack
+yaourt Qualcomm
+yaourt adb
+yaourt android
+yaourt android
+yaourt android-tools
+yaourt wine
+yaourt ntfs
+sudo yaourt -Syu --sucre
+yaourt iotop
+yaourt zsh
+yaourt
+yaourt arduino
+yaourt arduino
+

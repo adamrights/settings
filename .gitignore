@@ -1,0 +1,179 @@
+#shamans.cc Untracked $HOME files
+
+### See how .zhistory syncs on dropbox and make it smarter/cleaner before adding
+#.zhistory*
+
+#.mozilla dotfiles 
+.mozilla
+#vim swap
+.vim/swaps/*
+.vimswap
+.vimbackup
+.viminfo
+.vim_colorv_cache_favo
+.vimundo
+
+### for lenovo build some dotfiles will eventually be tracked; they exist as submodules 
+### Be smarter
+
+#*
+
+
+
+# these are just symlinks to my prezto fork runcoms
+#.zlogin
+#.zlogout
+#.zpreztorc
+#.zprofile
+#.zshenv
+#.zshrc
+Backups/*
+Desktop/*
+Documents/*
+Downloads/*
+Dropbox/*
+Music/*
+Pictures/*
+Workspace/*
+bin/*
+Anki/*
+code/*
+gh_favs/*
+my*/*
+node_modules/*
+Sites/*
+src/*
+share/*
+/home/adam/
+#.*
+Public/*
+# Compiled Python files
+*.pyc
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+.ICEauthority
+.NERDTreeBookmarks
+.VirtualBox/
+.Xauthority
+.adobe/
+.android
+.arduino
+.arista
+.bash_history
+.bash_history~
+.bash_logout
+.bluefish/
+.bower/
+.bowerrc
+.bzr.log
+.cabal/
+#	.cache/
+#	.config/
+#	.darcs/
+#	.dmenu_cache
+#	.dropbox-dist/
+#	.dropbox/
+#	.esd_auth
+#	.gem/
+#	.gimp-2.8/
+#	.gksu.lock
+#	.gstreamer-0.10/
+#	.gtk-bookmarks
+#	.gvimrc.fork
+#	.gvimrc.local
+#	.java/
+#	.kde4/
+#	.local/
+#	.macromedia/
+#	.mplayer/
+#	.neocomplcache/
+#	.netflix-desktop/
+#	.npm/
+#	.pki/
+#	.rbenv/
+#	.ruby-version
+#	.smb/
+#	.spf13-vim-3/
+#	.spotify-controller/
+#	.ssh/
+#	.subversion/
+#	.thumbnails/
+#	.torrent-search/
+#	.vim
+#	.vim.20130513/
+#	.vim_colorv_cache_fav
+#	.vimbackup/
+#	.viminfo
+#	.vimrc.bundles
+#	.vimrc.bundles.fork
+#	.vimrc.bundles.local
+#	.vimrc.fork
+#	.vimrc.local
+#	.vimswap/
+#	.vimundo/
+#	.vimviews/
+#	.wicd/
+#	.wine/
+#	.xbmc/
+#	.xmonad/
+#	.xsession
+#	.zcompcache/
+#	.zcompdump
+#	.zcompdump.zwc
+#	.zlogin
+#	.zlogout
+#	.zpreztorc
+#	.zprofile
+#	.zshenv
+#	.zshrc
+#	Adobe+Illustrator+CS6+16.0.0+32+64+bit+Cracked.torrent
+#	Anki/
+#	Backups/
+#	Brown_Bear_Passwords
+#	MIKERESCUE.LOG
+#	Mac.OSX.Mountain.Lion.v10.8.3-HOTiSO [2512386].torrent
+#	Music/
+#	Pictures/
+#	SNAPUT
+#	Sites/
+#	Videos/
+#	VirtualBox VMs/
+#	[monova.org] Portable_Adobe_Photoshop_CS6_v13.0_Pre-release_(_LATEST_APRIL_-_2012_).torrent
+#	[monova.org] photoshop_cs6_mac.torrent
+#	abs-pkgs/
+#	android/
+#	app/
+#	aui_packages/
+#	code/
+#	gh_favs/
+#	gnome.extension-foobar-sample/
+#	log_settings.sh
+#	myapp-mongo/
+#	myapp-stripe/
+#	myapp/
+#	node_modules/
+#	prezto/
+#	prezto~/
+#	recent-rebuild-commands.log
+#	share/
+#	sketchbook/
+#	snapshot-home.sh
+#	snapshot-root.sh
+#	src/
+#	stock_kernel_no_Network_Manager_wait
+#	stock_kernel_no_flag_benchmark
+#	tmp/
+Videos/*
+VirtualBox VMs/*
+sketchbook/*
+tmp/*
