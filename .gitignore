@@ -1,7 +1,7 @@
 #shamans.cc Untracked $HOME files
 
 ### See how .zhistory syncs on dropbox and make it smarter/cleaner before adding
-#.zhistory*
+.zhistory*
 
 #.mozilla dotfiles 
 .mozilla
