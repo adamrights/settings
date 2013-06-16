@@ -2,7 +2,6 @@
 
 ### See how .zhistory syncs on dropbox and make it smarter/cleaner before adding
 .zhistory
-/home/adam/.zhistory
 #.mozilla dotfiles 
 .mozilla
 #vim swap
@@ -17,7 +16,11 @@
 ### Be smarter
 
 #*
-
+.DS_Store
+node_modules
+components
+npm-debug.log
+dist
 
 
 # these are just symlinks to my prezto fork runcoms
@@ -27,6 +30,7 @@
 #.zprofile
 #.zshenv
 #.zshrc
+
 Backups/*
 Desktop/*
 Documents/*
