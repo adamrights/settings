@@ -7,7 +7,8 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias wo="cd ~Workspace"
+alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
@@ -17,8 +18,8 @@ alias j="jobs"
 alias v="vim"
 alias m="mate ."
 alias s="subl ."
-alias o="open"
-alias oo="open ."
+alias o="nautilus"
+alias oo="nautilus ."
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
