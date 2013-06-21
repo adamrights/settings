@@ -1,0 +1,2 @@
+rsync -aAXv /* /run/media/adam/toshiba-sdd/ --exclude={/dev/*,/proc/*,/sys/*,/tmp/*,/run/*,/mnt/*,/media/*,/lost+found,/home/*/.gvfs,/home/adam/*}
+rsync -aAXv /home/adam/* /run/media/adam/494898DF4647F4A7/toshiba-home-backup/ --exclude=/home/adam/Dropbox/*

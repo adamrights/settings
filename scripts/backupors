@@ -1,0 +1,7 @@
+#bin/bash
+dropdb orsdata                       #drop the development db
+pg_dumpall -horsserver > ~/Backups/orsdata.db  #Suck in the production db
+psql -f ./orsdata.db postgres          #suck the orsdata into the development database (this helps let us see we haven't ruined our schema)
+sudo rc.d restart httpd              #rc.d way of restarting Apache server
+
+

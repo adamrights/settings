@@ -1,0 +1,88 @@
+# Recording the desktop and an application audio source for webcast
+
+ffmpeg -f alsa -ac 2 -i pulse -f x11grab -r 30 -s 1024x768 -i :0.0 -acodec pcm_s16le -vcodec libx264 -vpre lossless_ultrafast -threads 0 ./Desktop/mydesktop.mkv
+
+# Compress a series of png pictures to an avi movie (great for boot animations)
+mencoder "mf://*.png" -mf fps=2 -o output.avi -ovc lavc -lavcopts vcodec=mpeg4
+
+# Run the last command as root
+sudo !!
+
+# Serve current directory tree at http://$HOSTNAME:8000/
+python -m SimpleHTTPServer
+
+# Save a file you edited in vim without the needed permissions
+:w !sudo tee %
+
+# change to the previous working directory
+cd -
+
+#mount server, android, etc via SSH
+sshfs name@server:/path/to/folder /path/to/mount/point
+
+# Runs previous command but replacing
+^foo^bar
+
+# mtr, better than traceroute and ping combined
+mtr google.com
+
+# Rapidly invoke an editor to write a long, complex, or tricky command
+ctrl-x e
+
+# Execute a command without saving it in the history
+<space>command
+
+# Empty a file
+> file.txt
+
+# Copy ssh keys to user@host to enable password-less ssh logins.
+$ssh-copy-id user@host
+
+# Salvage a borked terminal
+reset
+
+# Capture video of a linux desktop
+ffmpeg -f x11grab -s wxga -r 25 -i :0.0 -sameq /tmp/out.mpg
+
+# Place the argument of the most recent command on the shell
+'ALT+.' or '<ESC> .'
+
+# currently mounted filesystems in nice layout
+mount | column -t
+
+# start a tunnel from some machine's port 80 to your local post 2001
+ssh -N -L2001:localhost:80 somemachine
+
+# Execute a command at a given time
+echo "ls -l" | at midnight
+
+# Get all files of particular type (say, PDF) listed on some wegpage (say, example.com)
+wget -r -A .pdf -l 5 -nH --no-parent http://example.com
+
+# Query Wikipedia via console over DNS
+dig +short txt <keyword>.wp.dg.cx
+
+# Lists all listening ports together with the PID of the associated process
+netstat -tlnp
+
+# output your microphone to a remote computer's speaker
+dd if=/dev/dsp | ssh -c arcfour -C username@host dd of=/dev/dsp
+
+# Update twitter via curl
+curl -u user:pass -d status="Tweeting from the shell" http://twitter.com/statuses/update.xml
+
+# Runs previous command replacing foo by bar every time that foo appears
+!!:gs/foo/bar
+
+# Quick access to the ascii table.
+man ascii
+
+# Mount a temporary ram partition
+mount -t tmpfs tmpfs /mnt -o size=1024m
+
+# Mount folder/filesystem through SSH
+sshfs name@server:/path/to/folder /path/to/mount/point
+
+# Compare a remote file with a local file
+ssh user@host cat /path/to/remotefile | diff /path/to/localfile -
+
