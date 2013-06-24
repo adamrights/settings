@@ -131,4 +131,5 @@ done
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
-alias xran=xrandr --output VGA1 --mode 1280x1024 --preferred  --output HDMI1 --mode 1920x1080 --right-of VGA1 --primary --preferred > .aliases
+alias xran="xrandr --output VGA1 --mode auto --preferred  --output HDMI1 --mode auto --right-of VGA1 --preferred"
+alias disp-ext-even='disper --verbose --displays=VGA1,HDMI1 --resolution="1280x1024,1280x1024" scaling="scaled" -e'
