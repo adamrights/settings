@@ -1,0 +1,4 @@
+# https://github.com/RailsApps/rails-composer
+# use rails-composer when running "rails new app"
+# ~/.railsrc
+-m https://raw.github.com/RailsApps/rails-composer/master/composer.rb
