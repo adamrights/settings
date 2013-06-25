@@ -16,11 +16,12 @@ xscreensaver -no-splash &
 tray &
 
 # Start two terminals
-urxvt &
-urxvt &
+xfce4-terminalt &
+xfce4-terminalt &
+
 
 # Start a browser
-google-chrome &
+chromium &&
 
 # Start xchat (IRC client)
 xchat &

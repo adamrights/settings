@@ -1,1 +1,1 @@
-xmonad
+monad
