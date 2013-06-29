@@ -1,0 +1,4 @@
+[Desktop Entry]
+Exec=xmonad
+TryExec=xmonad
+Name=XMONAD
