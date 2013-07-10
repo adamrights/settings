@@ -6,6 +6,58 @@
 # @adamrights
 ###############################################################################
 
+################################################################################
+# Functions that should only be sourced when osx detected.
+# Save osx settings for Shea, so shamans.cc build/dev/design
+# machines will be catered to Arch GNU/Linux and osx.
+# see spf13-vim for good example.
+
+
+# Add note to Notes.app (OS X 10.8)
+# Usage: `note 'foo'` or `echo 'foo' | note`
+#function note() {
+#	local text
+#	if [ -t 0 ]; then # argument
+#   text="$1"
+#	else # pipe
+#		text=$(cat)
+#	fi
+#	body=$(echo "$text" | sed -E 's|$|<br>|g')
+#	osascript >/dev/null <<EOF
+#tell application "Notes"
+#	tell account "iCloud"
+#		tell folder "Notes"
+#			make new note with properties {name:"$text", body:"$body"}
+#		end tell
+#	end tell
+#end tell
+#EOF
+#}
+#
+## Add reminder to Reminders.app (OS X 10.8)
+## Usage: `remind 'foo'` or `echo 'foo' | remind`
+#function remind() {
+#	local text
+#	if [ -t 0 ]; then
+#		text="$1" # argument
+#	else
+#		text=$(cat) # pipe
+#	fi
+#	osascript >/dev/null <<EOF
+#tell application "Reminders"
+#	tell the default list
+##		make new reminder with properties {name:"$text"}
+#	end tell
+#end tell
+#EOF
+##}
+#
+## Manually remove a downloaded app or file from the quarantine
+#function unquarantine() {
+#	for attribute in com.apple.metadata:kMDItemDownloadedDate com.apple.metadata:kMDItemWhereFroms com.apple.quarantine; do
+#		xattr -r -d "$attribute" "$@"
+#	done
+##}
 # ~/.osx — http://mths.be/osx
 
 # Ask for the administrator password upfront

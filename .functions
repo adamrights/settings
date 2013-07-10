@@ -1,8 +1,36 @@
+#!/usr/bin/env bash
+
+# ------------------------------------------------------------------ #
+#  TODO: make a nice script to collect my favorites from gists,      #
+#  commandlinefu, tagmycode, snippets, etc                           #
+# ------------------------------------------------------------------ #
+
+# https://gist.github.com/adamrights/5371626
+# Runs a command wrapped with btrfs pre-post snapshots.
+log_path="/var/local/log/snp"
+date=$(date "+%Y-%m-%d-%H%M%S")
+log_file="${log_path}/snp_${date}.log"
+
+# Log stdout and stderr. Reference: http://stackoverflow.com/questions/3173131/redirect-copy-of-stdout-to-log-file-from-within-bash-script-itself
+exec >  >(tee -a "$log_file")
+exec 2> >(tee -a "$log_file" >&2)
+
+cmd="$@"
+
+snapshot_nbr=$(snapper create --type=pre --cleanup-algorithm=number --print-number --description="${cmd}")
+echo -e "> New pre snapshot with number ${snapshot_nbr}."
+echo -e "> Running command \"${cmd}\"."
+
+eval "$cmd"
+
+snapshot_nbr=$(snapper create --type=post --cleanup-algorithm=number --print-number --pre-number="$snapshot_nbr")
+echo -e "\n> New post snapshot with number ${snapshot_nbr}."
+
 #Nice little script shows list of currently loaded kernel modules, their parameters \
 # and their current values. Woot woot, thanks: https://wiki.archlinux.org/index.php/Kernel_modules
 
-function aa_mod_parameters () 
-{ 
+function aa_mod_parameters ()
+{
     N=/dev/null;
     C=`tput op` O=$(echo -en "\n`tput setaf 2`>>> `tput op`");
     for mod in $(cat /proc/modules|cut -d" " -f1);

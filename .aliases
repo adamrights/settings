@@ -3,8 +3,10 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
+
+# Not needed as "~" in zsh cd  to $HOME. - @adamrights
+# alias ~="cd ~" # `cd` is probably faster to type though
 
 # Shortcuts
 alias suc="su -c'$@'" 
@@ -21,6 +23,9 @@ alias m="mate ."
 alias s="subl ."
 alias o="nautilus"
 alias oo="nautilus ."
+
+# using rsync to copy files with progressbar
+alias cpsync='rsync --stats --progress -ravzhE
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -87,13 +92,12 @@ alias spoton="sudo mdutil -a -i on"
 
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
-	alias "$method"="lwp-request -m '$method'"
+  alias "$method"="lwp-request -m '$method'"
 done
 
 # Aliases I've echoed in from the command line - @adamrights
-alias disp-ext-even='disper --verbose --displays=VGA1,HDMI1 --resolution="1280x1024,1280x1024" scaling="scaled" -e'
+alias disp-even='disper --verbose --displays=VGA1,HDMI1 --resolution="1280x1024,1280x1024" scaling="scaled" -e'
 alias xran="xrandr --output HDMI1 --mode 1920x1080 --pos 1600x0 --output VGA1 --mode 1600x900 --pos 0x0"
-xrandr --output HDMI1 --mode 1920x1080 --pos 1600x0 --output VGA1 --mode 1600x900 --pos 0x0
 # Useful yaourt aliases to keep while primary building is with makepkg script #
 # see: http://jasonwryan.com/blog/2013/04/09/helpers/
 alias lsaur='yaourt -Qet |grep local'
@@ -104,4 +108,4 @@ alias lsaur='yaourt -Qet |grep local'
 # For example, to list all directories that contain a certain file:
 # find . -name .gitattributes | map dirname
 alias map="xargs -n1"
-alias lshist='history 0 | awk '{ print ; }'  | sort | uniq -c | sort -rn | head -n 10'
+alias lszh='history 0 | awk '{ print ; }'  | sort | uniq -c | sort -rn | head -n 10'

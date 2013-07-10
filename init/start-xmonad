@@ -16,7 +16,7 @@ fi
 /usr/bin/gnome-screensaver &
 /usr/bin/nm-applet &
 tray &
-#/usr/bin/wicd-gtk &
+# /usr/bin/wicd-gtk &
 
 eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
 

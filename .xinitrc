@@ -21,10 +21,10 @@ xfce4-terminalt &
 
 
 # Start a browser
-chromium &&
+chromium &
 
 # Start xchat (IRC client)
-xchat &
+#xchat &
 
 pulseaudio --start &
 
