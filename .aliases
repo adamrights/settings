@@ -84,10 +84,6 @@ alias rot13='tr a-zA-Z n-za-mN-ZA-M'
 # URL-encode strings
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 
-# Disable Spotlight
-alias spotoff="sudo mdutil -a -i off"
-# Enable Spotlight
-alias spoton="sudo mdutil -a -i on"
 
 
 # One of @janmoesen’s ProTip™s
@@ -109,3 +105,8 @@ alias lsaur='yaourt -Qet |grep local'
 # find . -name .gitattributes | map dirname
 alias map="xargs -n1"
 alias lszh='history 0 | awk '{ print ; }'  | sort | uniq -c | sort -rn | head -n 10'
+
+# Disable Spotlight
+alias spotoff="sudo mdutil -a -i off"
+# Enable Spotlight
+alias spoton="sudo mdutil -a -i on"
