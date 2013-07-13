@@ -19,19 +19,19 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 alias v="vim"
-alias m="mate ."
+alias gv="gvim ."
 alias s="subl ."
 alias o="nautilus"
 alias oo="nautilus ."
 
 # using rsync to copy files with progressbar
-alias cpsync='rsync --stats --progress -ravzhE
+alias cpsync='rsync --stats --progress -ravzhE'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
-	colorflag="--color"
+ colorflag="--color"
 else # OS X `ls`
-	colorflag="-G"
+ colorflag="-G"
 fi
 
 # List all files colorized in long format
@@ -98,15 +98,3 @@ alias xran="xrandr --output HDMI1 --mode 1920x1080 --pos 1600x0 --output VGA1 --
 # see: http://jasonwryan.com/blog/2013/04/09/helpers/
 alias lsaur='yaourt -Qet |grep local'
 
-## TODO: add to .osx
-# 
-# Intuitive map function
-# For example, to list all directories that contain a certain file:
-# find . -name .gitattributes | map dirname
-alias map="xargs -n1"
-alias lszh='history 0 | awk '{ print ; }'  | sort | uniq -c | sort -rn | head -n 10'
-
-# Disable Spotlight
-alias spotoff="sudo mdutil -a -i off"
-# Enable Spotlight
-alias spoton="sudo mdutil -a -i on"
