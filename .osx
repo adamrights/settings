@@ -9,16 +9,26 @@
 ################################################################################
 # Functions that should only be sourced when osx detected.
 # Save osx settings for Shea, so shamans.cc build/dev/design
-# machines will be catered to Arch GNU/Linux and osx.
+# machines will be catered to Arch GNU/Linux and osx
 # see spf13-vim for good example.
 
 
+# Intuitive map function
+# For example, to list all directories that contain a certain file:
+# find . -name .gitattributes | map dirname
+alias map="xargs -n1"
+alias lszh='history 0 | awk '{ print ; }'  | sort | uniq -c | sort -rn | head -n 10'
+
+# Disable Spotlight
+alias spotoff="sudo mdutil -a -i off"
+# Enable Spotlight
+alias spoton="sudo mdutil -a -i on"
 # Add note to Notes.app (OS X 10.8)
 # Usage: `note 'foo'` or `echo 'foo' | note`
 #function note() {
 #	local text
 #	if [ -t 0 ]; then # argument
-#   text="$1"
+#		text="$1"
 #	else # pipe
 #		text=$(cat)
 #	fi
