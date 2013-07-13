@@ -7,3 +7,6 @@
 [submodule ".xmonad"]
 	path = .xmonad
 	url = https://github.com/vicfryzel/xmonad-config.git
+[submodule "scripts/z"]
+	path = scripts/z
+	url = https://github.com/rupa/z/
