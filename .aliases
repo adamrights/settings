@@ -1,3 +1,15 @@
+#
+#https://raw.github.com/cowboy/dotfiles/master/source/50_net.sh
+#IP addresses
+alias wanip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias whois="whois -h whois-servers.net"
+
+# Flush Directory Service cache
+alias flush="dscacheutil -flushcache"
+
+# View HTTP traffic
+alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
@@ -93,4 +105,4 @@ alias lsaur='yaourt -Qet |grep local'
 
 # Aliases I've echoed in from the command line - @adamrights
 alias disp-even='disper --verbose --displays=VGA1,HDMI1 --resolution="1280x1024,1280x1024" scaling="scaled" -e'
-alias xran="xrandr --output HDMI1 --mode 1920x1080 --pos 1600x0 --output VGA1 --mode 1600x900 --pos 0x0"
+alias xran="xrandr --output HDMI1 --mode 1920x1080 --pos 900x0 --output VGA1 --mode 1600x900 --pos 0x0"
