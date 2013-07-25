@@ -5,6 +5,50 @@
 #  commandlinefu, tagmycode, snippets, etc                           #
 # ------------------------------------------------------------------ #
 
+### https://raw.github.com/stephenplusplus/dots/master/.bash_profile
+# clones a repository, cds into it, and opens it in my editor.
+# - arg 1 - url|username|repo remote endpoint, username on github, or name of
+#           repository.
+# - arg 2 - (optional) name of repo
+#
+# usage:
+#   $ clone things
+#     .. git clone git@github.com:stephenplusplus/things.git things
+#     .. cd things
+#     .. subl .
+#
+#   $ clone git@github.com:stephenplusplus/dots.git
+#     .. git clone git@github.com:stephenplusplus/dots.git dots
+#     .. cd dots
+#     .. subl .
+#
+#   $ clone yeoman generator
+#     .. git clone git@github.com:yeoman/generator.git generator
+#     .. cd generator
+#     .. subl .
+function clone {
+  local url=$1;
+  local repo=$2;
+
+  if [[ ${url:0:4} == 'http' || ${url:0:3} == 'git' ]]
+  then
+    # just clone this thing.
+    repo=$(echo $url | awk -F/ '{print $NF}' | sed -e 's/.git$//');
+  elif [[ -z $repo ]]
+  then
+    # my own stuff.
+    repo=$url;
+    url="git@github.com:stephenplusplus/$repo";
+  else
+    # not my own, but I know whose it is.
+    url="git@github.com:$url/$repo.git";
+  fi
+
+  git clone $url $repo && cd $repo && subl .;
+}
+###
+
+
 # https://gist.github.com/adamrights/5371626
 # Runs a command wrapped with btrfs pre-post snapshots.
 log_path="/var/local/log/snp"
@@ -52,6 +96,7 @@ function aa_mod_parameters ()
     done
 
 }
+
 
 # Simple calculator
 function calc() {
