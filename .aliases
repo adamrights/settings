@@ -106,3 +106,4 @@ alias lsaur='yaourt -Qet |grep local'
 # Aliases I've echoed in from the command line - @adamrights
 alias disp-even='disper --verbose --displays=VGA1,HDMI1 --resolution="1280x1024,1280x1024" scaling="scaled" -e'
 alias xran="xrandr --output HDMI1 --mode 1920x1080 --pos 900x0 --output VGA1 --mode 1600x900 --pos 0x0"
+alias psc='ps xawf -eo pid,user,cgroup,args'

@@ -10,3 +10,6 @@
 [submodule "scripts/z"]
 	path = scripts/z
 	url = https://github.com/rupa/z/
+[submodule "Awesome-Laptop-3.5"]
+	path = Awesome-Laptop-3.5
+	url = ./Awesome-Laptop-3.5
