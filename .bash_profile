@@ -37,7 +37,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 
 [[ -s /home/adam/.nvm/nvm.sh ]] && . /home/adam/.nvm/nvm.sh # This loads NVM
+export PATH="$HOME/.rbenv/bin:$PATH"
