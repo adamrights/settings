@@ -10,10 +10,6 @@
 !XTerm*background: rgb:08/08/08
 !XTerm*color0: rgb:28/28/28
 
-xterm*bell: false
-xterm*bellIsUrgent: false
-
-
 ! Solarized color scheme for the X Window System
 !
 ! http://ethanschoonover.com/solarized
@@ -55,7 +51,10 @@ xterm*bellIsUrgent: false
 ! #define S_base3         #002b36
 
 
-
+! To only apply colors to your terminal, for example, prefix
+! the color assignment statement with its name. Example:
+!
+! URxvt*background:            S_base03
 
 *background:              S_base03
 *foreground:              S_base0
@@ -82,5 +81,53 @@ xterm*bellIsUrgent: false
 *color14:                 S_base1
 *color15:                 S_base3
 
-xterm*termName: xterm-256color
 
+XTerm*termName: xterm-256color
+xterm*geometry: 82x20
+xterm*faceName: xft::pixelsize=10:antialias=false
+xterm*font: -*-envy-code-r-*-*-8-*-*-*-*-*-*-*
+!xterm*font: -misc-tamsyn-medium-r-normal--14-87-100-100-c-60-*
+xterm*dynamicColors: true
+xterm*utf8: 2
+xterm*eightBitInput: true
+xterm*saveLines: 30000
+xterm*scrollKey: true
+xterm*scrollTtyOutput: false
+xterm*scrollBar: false
+xterm*rightScrollBar: false
+xterm*jumpScroll: false
+xterm*multiScroll: true
+xterm*toolBar: false
+xterm*bell: false
+xterm*bellIsUrgent: false
+
+
+URxvt.urlLauncher: firefox
+
+!## teh URxvt stuff
+URxvt.font : -*-fixed-*-*-*-13-*-*-*-*-*-*-*
+URxvt.iconFile:    /usr/share/icons/Clarity/scalable/apps/terminal.svg
+URxvt.perl-ext-common:  default,matcher
+URxvt.url-launcher:      /usr/bin/firefox
+URxvt.matcher.button:   1
+URxvt.keysym.C-Delete:  perl:matcher:last
+URxvt.keysym.M-Delete:  perl:matcher:list
+URxvt.colorUL: #4682B4
+urxvt.geometry:          54x15
+URxvt.borderless:        true
+urxvt*scrollBar:         false
+URxvt.scrollBar_right : False
+URxvt.scrollBar_floating : False
+URxvt.scrollstyle : plain
+!## teh transparency stuff
+!URxvt.inheritPixmap: true
+!URxvt.tintColor: white
+!URxvt.shading: 40
+URxvt.background: #262626
+URxvt.foreground: #497BF7
+!## teh dpi stuff
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
