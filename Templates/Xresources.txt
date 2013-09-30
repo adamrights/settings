@@ -1,0 +1,84 @@
+XTerm*termName: xterm-256color
+xterm*geometry: 82x20
+xterm*faceName: xft::pixelsize=10:antialias=false
+xterm*font: -*-envy-code-r-*-*-8-*-*-*-*-*-*-*
+!xterm*font: -misc-tamsyn-medium-r-normal--12-87-100-100-c-60-*
+xterm*dynamicColors: true
+xterm*utf8: 2
+xterm*eightBitInput: true
+xterm*saveLines: 512
+xterm*scrollKey: true
+xterm*scrollTtyOutput: true
+xterm*scrollBar: false
+xterm*rightScrollBar: false
+xterm*jumpScroll: false
+xterm*multiScroll: true
+xterm*toolBar: false
+*background: #262626
+*foreground: #497BF7
+
+
+URxvt.urlLauncher: firefox
+
+*.colorBD: #CFCFCF
+*.colorUL: #A0A0A0
+*.colorIT: #686868
+
+! Black
+*color0: #111111
+*color8: #666666
+
+! Red
+*color1: rgb:d3/62/65
+*color9: rgb:ef/81/71
+
+! Green
+*color2: #aece91
+*color10: #cfefb3
+
+! Yellow
+*color3: rgb:e7/e1/8c
+*color11: rgb:ff/f7/96
+
+! Blue
+*color4: #5297cf
+*color12: #74b8ef
+
+! Magenta
+*color5: #963c59
+*color13: #b85e7b
+
+! Cyan
+*color6: #5E7175
+*color14: #A3BABF
+
+! White
+*color7: #bebebe
+*color15: #ffffff
+!## teh URxvt stuff
+URxvt.font : -*-fixed-*-*-*-12-*-*-*-*-*-*-*
+URxvt.iconFile:    /usr/share/icons/Clarity/scalable/apps/terminal.svg
+URxvt.perl-ext-common:  default,matcher
+URxvt.url-launcher:      /usr/bin/firefox
+URxvt.matcher.button:   1
+URxvt.keysym.C-Delete:  perl:matcher:last
+URxvt.keysym.M-Delete:  perl:matcher:list
+URxvt.colorUL: #4682B4
+urxvt.geometry:          54x15
+URxvt.borderless:        true
+urxvt*scrollBar:         false
+URxvt.scrollBar_right : False
+URxvt.scrollBar_floating : False
+URxvt.scrollstyle : plain
+!## teh transparency stuff
+!URxvt.inheritPixmap: true
+!URxvt.tintColor: white
+!URxvt.shading: 40
+URxvt.background: #262626
+URxvt.foreground: #497BF7
+!## teh dpi stuff
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
